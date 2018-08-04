@@ -1,7 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard1.1</TargetFramework>
+        <PackageId>Jering.IocServices.System.Net.Http</PackageId>
+        <Authors>JeremyTCD</Authors>
+        <Description>Inversion of Control Services for Types in the System.Net.Http Namespace.</Description>
+        <Copyright>© JeremyTCD. All rights reserved.</Copyright>
+        <PackageProjectUrl>https://github.com/JeremyTCD/IocServices.System</PackageProjectUrl>
+        <PackageLicenseUrl>$(PackageProjectUrl)/blob/master/License.txt</PackageLicenseUrl>
+        <PackageReleaseNotes>$(PackageProjectUrl)/blob/master/Changelog.md</PackageReleaseNotes>
+        <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
+        <PackageTags></PackageTags>
+        <RepositoryType>git</RepositoryType>
+        <IncludeSymbols>true</IncludeSymbols>
+    </PropertyGroup>
 
 </Project>
