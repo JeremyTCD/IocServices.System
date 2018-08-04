@@ -9,7 +9,7 @@ namespace Jering.IocServices.System.Net.Http
 {
     public interface IHttpClientService
     {
-        HttpRequestHeaders DefaultRequestHeaders { get; set; }
+        HttpRequestHeaders DefaultRequestHeaders { get; }
         Uri BaseAddress { get; set; }
         TimeSpan Timeout { get; set; }
         Int64 MaxResponseContentBufferSize { get; set; }
@@ -36,10 +36,6 @@ namespace Jering.IocServices.System.Net.Http
         Task<HttpResponseMessage> PutAsync(Uri requestUri, HttpContent content);
         Task<HttpResponseMessage> PutAsync(String requestUri, HttpContent content, CancellationToken cancellationToken);
         Task<HttpResponseMessage> PutAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken);
-        Task<HttpResponseMessage> PatchAsync(String requestUri, HttpContent content);
-        Task<HttpResponseMessage> PatchAsync(Uri requestUri, HttpContent content);
-        Task<HttpResponseMessage> PatchAsync(String requestUri, HttpContent content, CancellationToken cancellationToken);
-        Task<HttpResponseMessage> PatchAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken);
         Task<HttpResponseMessage> DeleteAsync(String requestUri);
         Task<HttpResponseMessage> DeleteAsync(Uri requestUri);
         Task<HttpResponseMessage> DeleteAsync(String requestUri, CancellationToken cancellationToken);
