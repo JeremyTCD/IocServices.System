@@ -51,7 +51,7 @@ namespace Jering.IocServices.System.Net.Http
             }
         }
 
-        public Int64 MaxResponseContentBufferSize
+        public long MaxResponseContentBufferSize
         {
             get
             {
@@ -64,27 +64,27 @@ namespace Jering.IocServices.System.Net.Http
             }
         }
 
-        public Task<String> GetStringAsync(String requestUri)
+        public Task<string> GetStringAsync(string requestUri)
         {
             return _httpClient.GetStringAsync(requestUri);
         }
 
-        public Task<String> GetStringAsync(Uri requestUri)
+        public Task<string> GetStringAsync(Uri requestUri)
         {
             return _httpClient.GetStringAsync(requestUri);
         }
 
-        public Task<Byte[]> GetByteArrayAsync(String requestUri)
+        public Task<byte[]> GetByteArrayAsync(string requestUri)
         {
             return _httpClient.GetByteArrayAsync(requestUri);
         }
 
-        public Task<Byte[]> GetByteArrayAsync(Uri requestUri)
+        public Task<byte[]> GetByteArrayAsync(Uri requestUri)
         {
             return _httpClient.GetByteArrayAsync(requestUri);
         }
 
-        public Task<Stream> GetStreamAsync(String requestUri)
+        public Task<Stream> GetStreamAsync(string requestUri)
         {
             return _httpClient.GetStreamAsync(requestUri);
         }
@@ -94,7 +94,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.GetStreamAsync(requestUri);
         }
 
-        public Task<HttpResponseMessage> GetAsync(String requestUri)
+        public Task<HttpResponseMessage> GetAsync(string requestUri)
         {
             return _httpClient.GetAsync(requestUri);
         }
@@ -104,7 +104,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.GetAsync(requestUri);
         }
 
-        public Task<HttpResponseMessage> GetAsync(String requestUri, HttpCompletionOption completionOption)
+        public Task<HttpResponseMessage> GetAsync(string requestUri, HttpCompletionOption completionOption)
         {
             return _httpClient.GetAsync(requestUri, completionOption);
         }
@@ -114,7 +114,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.GetAsync(requestUri, completionOption);
         }
 
-        public Task<HttpResponseMessage> GetAsync(String requestUri, CancellationToken cancellationToken)
+        public Task<HttpResponseMessage> GetAsync(string requestUri, CancellationToken cancellationToken)
         {
             return _httpClient.GetAsync(requestUri, cancellationToken);
         }
@@ -124,7 +124,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.GetAsync(requestUri, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> GetAsync(String requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+        public Task<HttpResponseMessage> GetAsync(string requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
         {
             return _httpClient.GetAsync(requestUri, completionOption, cancellationToken);
         }
@@ -134,7 +134,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.GetAsync(requestUri, completionOption, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> PostAsync(String requestUri, HttpContent content)
+        public Task<HttpResponseMessage> PostAsync(string requestUri, HttpContent content)
         {
             return _httpClient.PostAsync(requestUri, content);
         }
@@ -144,7 +144,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.PostAsync(requestUri, content);
         }
 
-        public Task<HttpResponseMessage> PostAsync(String requestUri, HttpContent content, CancellationToken cancellationToken)
+        public Task<HttpResponseMessage> PostAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)
         {
             return _httpClient.PostAsync(requestUri, content, cancellationToken);
         }
@@ -154,7 +154,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.PostAsync(requestUri, content, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> PutAsync(String requestUri, HttpContent content)
+        public Task<HttpResponseMessage> PutAsync(string requestUri, HttpContent content)
         {
             return _httpClient.PutAsync(requestUri, content);
         }
@@ -164,7 +164,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.PutAsync(requestUri, content);
         }
 
-        public Task<HttpResponseMessage> PutAsync(String requestUri, HttpContent content, CancellationToken cancellationToken)
+        public Task<HttpResponseMessage> PutAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)
         {
             return _httpClient.PutAsync(requestUri, content, cancellationToken);
         }
@@ -174,7 +174,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.PutAsync(requestUri, content, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DeleteAsync(String requestUri)
+        public Task<HttpResponseMessage> DeleteAsync(string requestUri)
         {
             return _httpClient.DeleteAsync(requestUri);
         }
@@ -184,7 +184,7 @@ namespace Jering.IocServices.System.Net.Http
             return _httpClient.DeleteAsync(requestUri);
         }
 
-        public Task<HttpResponseMessage> DeleteAsync(String requestUri, CancellationToken cancellationToken)
+        public Task<HttpResponseMessage> DeleteAsync(string requestUri, CancellationToken cancellationToken)
         {
             return _httpClient.DeleteAsync(requestUri, cancellationToken);
         }
