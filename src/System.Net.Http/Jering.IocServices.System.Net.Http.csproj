@@ -12,7 +12,6 @@
         <PackageTags></PackageTags>
         <RepositoryType>git</RepositoryType>
         <IncludeSymbols>true</IncludeSymbols>
-        <Version>0.3.0</Version>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyOriginatorKeyFile>../../keypair.snk</AssemblyOriginatorKeyFile>
         <SignAssembly>true</SignAssembly>
